@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+  <dict>
+    <!-- 実行コマンド：launchctl load ~/Library/LaunchAgents/battery.plist -->
+    <key>Label</key>
+    <string>battery</string>
+    <key>ProgramArguments</key>
+    <array>
+        <string>/bin/bash</string>
+        <!-- <string>bash</string> -->
+        <string>スクリプトのパス</string>
+    </array>
+    <key>StartInterval</key>
+    <integer>600</integer>
+    <key>StandardOutPath</key>
+    <string>標準出力保存用パス</string>
+    <key>StandardErrorPath</key>
+    <string>標準エラー出力保存用パス</string>
+</dict>
+</plist>
+
